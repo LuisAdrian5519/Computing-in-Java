@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class While_10_números
+{
+
+	public static Scanner Teclado = new Scanner(System.in);
+
+	public static void main (String args [])
+	{
+		float número = 1;
+		float sumatoria = 0;
+		float promedio = 0;
+
+		int contador = 1;
+
+		while(contador<=10 && número !=0)
+		{
+		System.out.print ("Dame el número " + contador + ":");
+		número = Teclado.nextFloat();
+		sumatoria+=número;  //sumatoria =sumatoria+número
+		contador++;
+		}
+		promedio =sumatoria/(contador-1);
+
+		System.out.println ("La sumatoria es:" + sumatoria);
+		System.out.println ("El promedio es:" + promedio);
+
+	}
+}
